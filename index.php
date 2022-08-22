@@ -33,7 +33,7 @@
     </h4>
     <h4>
         <?php
-          $paragrafoNuovo = str_replace('lorem', '***', $paragrafo);
+          $paragrafoNuovo = str_replace($_GET['word'], '***', $paragrafo);
           echo $paragrafoNuovo;
           var_dump($paragrafoNuovo);
         ?>
