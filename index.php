@@ -19,23 +19,37 @@
 
         ?>
     </h3>
+    <h3>Lungezza paragrafo
+        <?php
+          echo strlen ($paragrafo);
+        ?>
+    </h3>
     <h4>
         <?php
           echo $paragrafo;
-          var_dump ($paragrafo);
+        ?>
+    </h4>
+
+    <h4>Lunghezza parola censurata
+        <?php
+          echo strlen($_GET['word']);
         ?>
     </h4>
     <h4>
         <?php
           echo $_GET['word'];
-          var_dump($_GET);
         ?>
     </h4>
+
     <h4>
         <?php
           $paragrafoNuovo = str_replace($_GET['word'], '***', $paragrafo);
           echo $paragrafoNuovo;
-          var_dump($paragrafoNuovo);
+        ?>
+    </h4>
+    <h4>Lunghezza nuovo paragrafo
+        <?php
+          echo strlen($paragrafoNuovo);
         ?>
     </h4>
 </body>
